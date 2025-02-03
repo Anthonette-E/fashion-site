@@ -13,12 +13,17 @@
       <h1>Fashion Trends</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Trends</a></li>
-          <li><a href="#">Style Tips</a></li>
-          <li><a herf="#">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#trends">Trends</a></li>
+          <li><a href="#style-tips">Style Tips</a></li>
+          <li><a herf="#about">About</a></li>
         </ul>
       </nav>
+      <!-- Add IDs to sections -->
+<section id="home" class="hero">...</section>
+<section id="trends" class="blog">...</section>
+<section id="style-tips" class="blog">...</section>
+<section id="about" class="newsletter">...</section>
     </header>
 
     <!-- Hero Section -->
@@ -29,46 +34,19 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="blog">
+    <section class="blog fade-in">...
       <article>
-        <img
-          src="images/fashion2.jpg"
-          alt="Fashion Trend"
-          width="190px"
-          height="150px"
-          spacing="50"
-        />
-        <img
-          src="images/fashion1.jpg"
-          width="190px"
-          height="150px"
-          spacing="50"
-        />
-        <img
-          src="images/fashion2.jpg.jpg"
-          width="170px"
-          height="150px"
-          spacing="50px"
-        />
+        <img src="images/fashion2.jpg" alt="Fashion Trend" width="190px" height="150px" spacing="50"/>
+        <img src="images/fashion1.jpg" width="190px" height="150px" spacing="50"/>
+        <img src="images/fashion2.jpg.jpg" width="170px" height="150px" spacing="50px" />
 
         <h3>10 Must Have Fashion Pieces</h3>
         <p>Discover essential fashion items for every season.</p>
         <a href="#">Read More</a>
       </article>
       <arctile>
-        <img
-          src="images/fashion3A.jpg"
-          width="250px"
-          height="200px"
-          spacing="50"
-        />
-        <img
-          src="images/fashion3.jpg"
-          alt="Street Style"
-          width="250px"
-          height="200px"
-          spacing="50"
-        />
+        <img src="images/fashion3A.jpg" width="250px" height="200px" spacing="50"/>
+        <img src="images/fashion3.jpg" alt="Street Style" width="250px" height="200px" spacing="50"/>
         <h3>Street Style Inspiration</h3>
         <p>Get inspired by urban fashion trends worldwide.</p>
         <img
@@ -87,19 +65,29 @@
       </arctile>
 
       <!-- Comment Section -->
-       <div class="comment-section">
+      <div class="comment-section">
         <h3>Leave a comment</h3>
-        <textarea id="commentInput"
-        placeholder="Write your comment here..."></textarea>
-        <button
-        onclick="postComment()">Post Comment</button>
+        <textarea
+          id="commentInput"
+          placeholder="Write your comment here..."
+        ></textarea>
+        <button onclick="postComment()">Post Comment</button>
         <div id="commentsList"></div>
-       </div>
+      </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Fashion Blog | Designed by Anthonette</p>
-    </footer>
   </body>
+   
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h3>Subscribe to Our Newsletter</h3>
+    <p>Get the latest fashion trends and tips delivered to your inbox.</p>
+    <input type="email" id="emailInput" placeholder="Enter your email">
+    <button onclick="subscribeNewsletter()">Subscribe</button>
+    <p id="subscribeMessage"></p>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fashion Blog | Designed by Anthonette</p>
+  </footer>
 </html>

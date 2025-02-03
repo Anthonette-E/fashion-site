@@ -75,34 +75,77 @@ footer {
 
 /* Comment Section */
 .comment-section {
-    width: 80%;
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0,1);
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 1);
 }
 .comment-section textarea {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize:none;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
 }
 .comment-section button {
-    display: block;
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#commentList {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
     margin-top: 10px;
+}
+
+.newsletter button {
     padding: 10px 20px;
     background-color: #ff4081;
     color: white;
-    border:none;
+    border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
 }
-#commentList {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+
+#subscribeMessage {
+    margin-top: 10px;
+    color: yellow;
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
