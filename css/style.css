@@ -40,4 +40,27 @@ nav ul li a {
     cursor: pointer;
 }
 
-
+/* Blog Section */
+.blog {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+.blog article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0. 1);
+}
+.blog img {
+    width: 100%;
+    border-radius: 8px;
+}
+.blog a {
+    display: block;
+    color: #ff4081;
+    text-decoration: none;
+    margin-top: 10px;
+}
