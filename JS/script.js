@@ -28,7 +28,6 @@ function postComment() {
   document.getElementById("commentInput").value = ""; // Clear input
 }
 
-
 function subscribeNewsletter() {
   let email = document.getElementById("emailInput").value;
   let message = document.getElementById("subscribeMessage");
@@ -44,7 +43,6 @@ function subscribeNewsletter() {
 
   document.getElementById("emailInput").value = ""; // Clear input
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -76,12 +74,29 @@ document.addEventListener("DOMContentLoaded", function () {
   checkScroll(); // Run on load
 });
 
-
 window.addEventListener("load", function () {
   let preloader = document.getElementById("preloader");
   preloader.style.opacity = "0";
   setTimeout(() => {
     preloader.style.display = "none";
   }, 500); // Small delay to ensure smooth disappearance
+});
+
+// Preloader
+window.addEventListener("load", function() {
+    document.getElementById("preloader").style.display = "none";
+});
+
+// Smooth scrolling
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+            e.preventDefault();
+            let target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
 });
 
