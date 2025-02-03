@@ -64,3 +64,11 @@ nav ul li a {
     text-decoration: none;
     margin-top: 10px;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    text-decoration: none;
+    margin-top: 10px;
+}
