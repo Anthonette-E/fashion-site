@@ -1,74 +1,74 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding:0;
-    background-color: #f8f8f8
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
 /* Header */
 header {
-    background-color: #222;
-    color: white;
-    padding: center;
+  background-color: #222;
+  color: white;
+  padding: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url(`images/hero.jpg`);
-    background-size: cover;
-    text-align: center;
-    padding: 100px 20px;
-    color: white;
+  background-image: url(`images/hero.jpg`);
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
 }
 
 .hero button {
-    background-color: #ff4081;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+  background-color: #ff4081;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Blog Section */
 .blog {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
 }
 .blog article {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 40px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0. 1);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 40px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0 1);
 }
 .blog img {
-    width: 100%;
-    border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 .blog a {
-    display: block;
-    color: #ff4081;
-    text-decoration: none;
-    margin-top: 10px;
+  display: block;
+  color: #ff4081;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    background-color: #222;
-    text-decoration: none;
-    margin-top: 10px;
+  text-align: center;
+  background-color: #222;
+  text-decoration: none;
+  margin-top: 10px;
 }
