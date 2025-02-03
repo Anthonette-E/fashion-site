@@ -13,3 +13,12 @@ header {
     padding: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
