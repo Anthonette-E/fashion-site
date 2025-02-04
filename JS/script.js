@@ -28,21 +28,7 @@ function postComment() {
   document.getElementById("commentInput").value = ""; // Clear input
 }
 
-function subscribeNewsletter() {
-  let email = document.getElementById("emailInput").value;
-  let message = document.getElementById("subscribeMessage");
 
-  if (!email.includes("@") || !email.includes(".")) {
-    message.textContent = "Please enter a valid email address!";
-    message.style.color = "red";
-    return;
-  }
-
-  message.textContent = "Thank you for subscribing!";
-  message.style.color = "lightgreen";
-
-  document.getElementById("emailInput").value = ""; // Clear input
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
